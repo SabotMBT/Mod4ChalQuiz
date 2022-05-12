@@ -10,24 +10,28 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="w-100 p-3 bg-dark">
-      <div class="containe-fluid">
+      <div class="container-fluid">
         <div class="row justify-content-between">
           <div
             class="hs-contain col-3 p-3 align-self-start bg-light rounded"
           ></div>
-          <div
-            class="t-contain col-3 p-3 align-self-end bg-light rounded"
-          ></div>
+          <div class="t-contain col-3 p-3 align-self-end bg-light rounded">
+            Time Remaining:
+          </div>
         </div>
       </div>
     </header>
-    <section class="card-container min-vh-100 w-100 p-3 bg-light">
-      <button class="start-button">Start Game</button>
+    <section
+      class="card-container min-vh-100 w-100 p-3 bg-light justify-content-center d-flex"
+    >
+      <button class="start-button btn btn-danger btn-small h-25">
+        Start Game
+      </button>
     </section>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
