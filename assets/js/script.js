@@ -8,19 +8,19 @@ var startBtn = $(".start-button");
 var questionTracker = [0, 1, 2, 3, 4];
 // question array
 const questionArray = [
-  "Question1",
-  "Question2",
-  "Question3",
-  "Question4",
-  "Question5",
+  "What is the air flight speed of an unladen swallow?",
+  "Finish the following phrase: Silly English ______",
+  "____ shall be the number thou shalt count, and the number of the counting shall be ____.",
+  "If wood floats in water, what also floats in water?",
+  "We are the Knights who say ____",
 ];
 const choicesArray = [];
-choicesArray[0] = new Array("A", "B", "C", "D");
-choicesArray[1] = new Array("A", "B", "C", "D");
-choicesArray[2] = new Array("A", "B", "C", "D");
-choicesArray[3] = new Array("A", "B", "C", "D");
-choicesArray[4] = new Array("A", "B", "C", "D");
-var answers = ["D", "B", "A", "C", "B"];
+choicesArray[0] = new Array("117mph", "290kts", "330km/h", "Do you mean an African or a Euopean Swallow?");
+choicesArray[1] = new Array("Bulldogs", "Knnnniggits!", "Boufsteck", "Goddens");
+choicesArray[2] = new Array("Three", "Five", "Two", "Seven");
+choicesArray[3] = new Array("Bread", "Apples", "A Witch!", "Very small rocks");
+choicesArray[4] = new Array("Nu", "Ni!", "Shrubbery", "Ekki-ekki-ekki-p'tang-zoom!");
+var answers = ["Do you mean an African or a Euopean Swallow?", "Knnnniggits!", "Three", "A Witch!", "Ni!"];
 console.log(questionArray);
 // question selector
 function questionSelector() {
