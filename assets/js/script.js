@@ -77,11 +77,13 @@ function startButton() {
 }
 // timer
 function timer() {
-  count--;
+  
   $("div.t-contain").text("Time Remaining: " + count + " seconds.");
-  if (count <= 0) {
-    count = 1;
-    return;
+  if (count > 0) {
+    count--;
+  } else {
+    count = 0;
+    break;
   }
 }
 //high score
