@@ -15,12 +15,28 @@ const questionArray = [
   "We are the Knights who say ____",
 ];
 const choicesArray = [];
-choicesArray[0] = new Array("117mph", "290kts", "330km/h", "Do you mean an African or a Euopean Swallow?");
+choicesArray[0] = new Array(
+  "117mph",
+  "290kts",
+  "330km/h",
+  "Do you mean an African or a Euopean Swallow?"
+);
 choicesArray[1] = new Array("Bulldogs", "Knnnniggits!", "Boufsteck", "Goddens");
 choicesArray[2] = new Array("Three", "Five", "Two", "Seven");
 choicesArray[3] = new Array("Bread", "Apples", "A Witch!", "Very small rocks");
-choicesArray[4] = new Array("Nu", "Ni!", "Shrubbery", "Ekki-ekki-ekki-p'tang-zoom!");
-var answers = ["Do you mean an African or a Euopean Swallow?", "Knnnniggits!", "Three", "A Witch!", "Ni!"];
+choicesArray[4] = new Array(
+  "Nu",
+  "Ni!",
+  "Shrubbery",
+  "Ekki-ekki-ekki-p'tang-zoom!"
+);
+var answers = [
+  "Do you mean an African or a Euopean Swallow?",
+  "Knnnniggits!",
+  "Three",
+  "A Witch!",
+  "Ni!",
+];
 console.log(questionArray);
 // question selector
 function questionSelector() {
@@ -77,13 +93,11 @@ function startButton() {
 }
 // timer
 function timer() {
-  
   $("div.t-contain").text("Time Remaining: " + count + " seconds.");
   if (count > 0) {
     count--;
   } else {
-    count = 0;
-    break;
+    return (count = 0);
   }
 }
 //high score
